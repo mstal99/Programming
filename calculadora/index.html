@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <form action="get">
+      <!-- the first number to work with -->
+      <input type="number" name="number1" id="num1" placeholder="0" />
+      <!-- Radio buttons to select the operation method -->
+      <input type="radio" name="op" id="sum" value="sum" checked />
+      <label for="sum">+</label>
+      <input type="radio" name="op" id="res" value="res" />
+      <label for="res">-</label>
+      <input type="radio" name="op" id="div" value="div" />
+      <label for="div">/</label>
+      <input type="radio" name="op" id="mul" value="mul" />
+      <label for="mul">*</label>
+      <!-- the second number to work with -->
+      <input type="number" name="number2" id="num2" placeholder="0" />
+
+      <button type="submit" id="igual">=</button>
+    </form>
+    <!-- Here will be displayed the result of the operation after pressing the "=" button -->
+    <h4 id="result"></h4>
+
+    <script src="app.js"></script>
+  </body>
+</html>
