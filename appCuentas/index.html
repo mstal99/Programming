@@ -20,7 +20,7 @@
           <h1>App de gastos</h1>
           <h3>ingresa cuánto pagó cada persona</h3>
         </div>
-        <form action="get">
+        <form>
           <div class="form-group">
             <label for="name">Name</label>
             <input
@@ -39,11 +39,11 @@
               placeholder="amount"
             />
           </div>
-          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="submit" onclick="addItem()" class="btn btn-success">
+            Submit
+          </button>
         </form>
-        <ul class="list-group" id="results">
-          <li class="list-group-item">231</li>
-        </ul>
+        <ul class="list-group" id="results"></ul>
         <p>Total: $<span id="total"></span></p>
         <p>A cada uno le toca aportar: $<span id="eachPays"></span></p>
       </div>
